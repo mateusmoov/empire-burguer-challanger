@@ -72,7 +72,7 @@ const Text = styled('span', {
       brown: { color: 'var(--palette-brown-400)' },
       bege: { color: 'var(--palette-bege)' },
       yellow: { color: 'var(--palette-yellow)' },
-      red: { color: 'var(--palette-red)' },
+      red: { color: 'var(--palette-red-100)' },
       white: { color: 'var(--palette-white)' },
       brown100: { color: 'var(--palette-brown-100)' },
       brown200: { color: 'var(--palette-brown-200)' },

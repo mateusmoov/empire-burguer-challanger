@@ -23,11 +23,11 @@ export const StyledButton = styled('button', {
     variants: {
         variant: {
             primary: {
-                backgroundColor: 'var(--palette-red)',
+                backgroundColor: 'var(--palette-red-100)',
             },
             secondary: {
                 backgroundColor: 'var(--palette-bege)',
-                color: 'var(--palette-red)',
+                color: 'var(--palette-red-100)',
                 fontFamily: 'var(--font-display)',
                 fontWeight: 'var(--font-weight-4)'
             }
