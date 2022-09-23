@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { globalStyles } from 'lib/globalStyles'
 import Text from 'components/Typography/TypographyText'
 import { StyledButton, StyledIconButton } from 'components/Button/Button'
+import { Flex } from 'components/Flex/Flex'
 import WhatsAppIcon from 'assets/whatsapp-logo.svg'
 import './App.css'
 
@@ -9,14 +10,11 @@ function App() {
   globalStyles()
   return (
     <div className="App">
-      <StyledButton variant='secondary'>
-        HELLO WORLD
-      </StyledButton>
-
-      <StyledIconButton variant='primary'>
-        <img src={WhatsAppIcon} alt="zapzap" />
-        Hello World
-      </StyledIconButton>
+      <Flex>
+        <StyledButton variant={'secondary'}>
+          HELLO WORLD
+        </StyledButton>
+      </Flex>
     </div >
   )
 }
