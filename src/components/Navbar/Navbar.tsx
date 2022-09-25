@@ -4,6 +4,8 @@ import Divider from "components/Divider/Divider";
 import Crown from "assets/crown-logo.svg";
 import IfoodLogo from "assets/ifood-logo.svg"
 import InstagramLogo from "assets/instagram-logo.svg"
+import WhatsAppLogo from 'assets/whatsapp-logo.svg'
+import { StyledIconButton } from "components/Button/Button";
 
 
 export const Navbar = () => {
@@ -27,11 +29,15 @@ export const Navbar = () => {
                 <Text as='a' family={"display"} weight={"2"} size={"3"} variant={"brown300"} href="http://pudim.com.br" >Comentario</Text>
                 <Text as='a' family={"display"} weight={"2"} size={"3"} variant={"brown300"} href="http://pudim.com.br" >Contato</Text>
             </Flex>
-            <Flex css={{ gap: 16 }}>
-                <img src={IfoodLogo} alt="ifood" color="black" />
-                <img src={InstagramLogo} alt="instagram" color="black" />
+            <Flex css={{ gap: 16, marginRight: 13 }}>
+                <a href=""><img src={IfoodLogo} alt="ifood" color="black" /></a>
+                <a href=""> <img src={InstagramLogo} alt="instagram" color="black" /></a>
                 <Divider orientation={'vertical'} variant={'red'} css={{ height: 47 }} />
             </Flex>
+            <StyledIconButton variant={'primary'} css={{ padding: '4px 16px' }}>
+                <img src={WhatsAppLogo} alt="whatsapp" />
+                Contato
+            </StyledIconButton>
         </Flex>
     );
 };
