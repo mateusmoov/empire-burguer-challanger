@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { globalStyles } from 'lib/globalStyles'
-import { Navbar } from 'components/Navbar/Navbar'
+import { IndexPage } from 'pages'
 import './App.css'
 
 function App() {
   globalStyles()
   return (
-    <Navbar />
+    <IndexPage />
   )
 }
 

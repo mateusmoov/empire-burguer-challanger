@@ -24,6 +24,8 @@ export const StyledButton = styled('button', {
         variant: {
             primary: {
                 backgroundColor: 'var(--palette-red-100)',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 'var(--font-weight-3)'
             },
             secondary: {
                 backgroundColor: 'var(--palette-bege)',
