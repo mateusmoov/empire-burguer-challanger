@@ -1,6 +1,6 @@
 import { styled } from 'lib/stitches.config';
 
-const Flex = styled('div', {
+export const Flex = styled('div', {
     display: 'flex',
 
     variants: {
@@ -94,5 +94,3 @@ const Flex = styled('div', {
         justifyContent: 'flex-start',
     },
 });
-
-export { Flex };

@@ -1,7 +1,4 @@
-import { Navbar } from "components/Navbar/Navbar"
-import Text from "components/Typography/TypographyText"
-import { Flex } from "components/Flex/Flex"
-import { StyledButton } from "components/Button/Button";
+import { Navbar, Text, Flex, StyledButton, WeDoSection } from "components";
 
 
 export const IndexPage = () => {
@@ -29,7 +26,7 @@ export const IndexPage = () => {
                 </div>
                 <div>
                     <Text variant={'brown'} family={'display'} weight={'1'}>Para quem tem um &nbsp;</Text>
-                    <Text variant={'brown300'} family={'display'} weight={'4'} css={{
+                    <Text as="span" variant={'brown300'} family={'display'} weight={'4'} css={{
                         backgroundColor: 'var(--palette-yellow)',
                         padding: '3px',
                         borderRadius: '6px'
@@ -41,6 +38,7 @@ export const IndexPage = () => {
                     Comprar Agora
                 </StyledButton>
             </Flex>
+            <WeDoSection />
         </div>
     )
 }

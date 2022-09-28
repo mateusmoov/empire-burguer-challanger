@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { globalStyles } from 'lib/globalStyles'
 import { IndexPage } from 'pages'
 import './App.css'

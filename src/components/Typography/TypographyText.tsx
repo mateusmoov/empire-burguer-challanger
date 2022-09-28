@@ -1,8 +1,7 @@
-import React from 'react'
 import { styled } from 'lib/stitches.config';
 
 
-const Text = styled('span', {
+export const Text = styled('span', {
   padding: 0,
   textRendering: 'optimizeLegibility',
 
@@ -86,5 +85,3 @@ const Text = styled('span', {
     weight: '2',
   }
 })
-
-export default Text;

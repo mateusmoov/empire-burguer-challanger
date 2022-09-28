@@ -1,6 +1,6 @@
 import { styled } from "lib/stitches.config";
 
-const Divider = styled('hr', {
+export const Divider = styled('hr', {
     variants: {
         orientation: {
             vertical: {
@@ -17,5 +17,3 @@ const Divider = styled('hr', {
         }
     }
 })
-
-export default Divider

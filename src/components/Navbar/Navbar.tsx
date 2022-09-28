@@ -1,11 +1,9 @@
-import { Flex } from "components/Flex/Flex";
-import Text from "components/Typography/TypographyText";
-import Divider from "components/Divider/Divider";
+import { Text, Divider, Flex, StyledIconButton } from 'components'
 import Crown from "assets/crown-logo.svg";
 import IfoodLogo from "assets/ifood-logo.svg";
 import InstagramLogo from "assets/instagram-logo.svg";
 import WhatsAppLogo from "assets/whatsapp-logo.svg";
-import { StyledIconButton } from "components/Button/Button";
+
 
 export const Navbar = () => {
     return (
