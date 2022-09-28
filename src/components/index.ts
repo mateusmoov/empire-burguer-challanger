@@ -4,7 +4,9 @@ import { Flex } from "./Flex";
 import { Header } from "./Header";
 import { Navbar } from "./Navbar";
 import { Text } from "./Typography";
+import { Grid } from "./Grid";
 import { WeDoSection } from "./WeDoSection";
+import { SpecialMenu } from "./SpecialMenu";
 
 export {
   StyledButton,
@@ -14,5 +16,7 @@ export {
   Header,
   Navbar,
   Text,
+  Grid,
   WeDoSection,
+  SpecialMenu,
 };
