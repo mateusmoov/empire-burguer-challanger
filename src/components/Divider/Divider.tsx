@@ -11,9 +11,9 @@ export const Divider = styled('hr', {
             }
         },
         variant: {
-            red: { backgroundColor: 'var(--palette-red-200)' },
-            gray: { backgroundColor: 'var(--palette-gray)' },
-            brown500: { backgroundColor: 'var(--palette-brown-500)' }
+            red: { border: '1px solid var(--palette-red-200)' },
+            gray: { border: '1px solid var(--palette-gray)' },
+            brown500: { border: '1px solid var(--palette-brown-500)' }
         }
     }
 })

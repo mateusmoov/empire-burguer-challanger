@@ -25,12 +25,13 @@ export const IndexPage = () => {
                     <Text family={'title'} size={'10'}>BURGUER</Text>
                 </div>
                 <div>
-                    <Text variant={'brown'} family={'display'} weight={'1'}>Para quem tem um &nbsp;</Text>
-                    <Text as="span" variant={'brown300'} family={'display'} weight={'4'} css={{
-                        backgroundColor: 'var(--palette-yellow)',
-                        padding: '3px',
-                        borderRadius: '6px'
-                    }} >Apetite de um REI!</Text>
+                    <Text as='p' variant={'brown'} family={'display'} weight={'1'}>Para quem tem um
+                        <Text as='span' variant={'brown300'} family={'display'} weight={'4'} css={{
+                            backgroundColor: 'var(--palette-yellow)',
+                            padding: '3px',
+                            borderRadius: '6px'
+                        }} > Apetite de um REI!</Text>
+                    </Text>
                 </div>
                 <StyledButton variant={'primary'} css={{
                     padding: '10px 20px', marginTop: '0.8rem'
