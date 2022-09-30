@@ -6,6 +6,7 @@ export const palette = {
   "--palette-red-100": "rgba(244, 49, 39, 1)",
   "--palette-red-200": "rgba(181, 11, 4, 1)",
   "--palette-yellow": "rgba(245, 154, 27, 1)",
+  "--palette-brown": "rgba(179, 155, 132, 0.5)",
   "--palette-brown-100": "rgba(99, 83, 82, 1)",
   "--palette-brown-200": "rgba(52, 32, 31, 1)",
   "--palette-brown-300": "rgba(59, 32, 11, 1)",

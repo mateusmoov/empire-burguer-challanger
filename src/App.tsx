@@ -1,11 +1,11 @@
 import { globalStyles } from 'lib/globalStyles'
-import { SpecialMenu } from 'components'
+import { IndexPage } from 'pages'
 import './App.css'
 
 function App() {
   globalStyles()
   return (
-    <SpecialMenu />
+    <IndexPage />
   )
 }
 

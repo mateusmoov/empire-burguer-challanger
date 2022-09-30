@@ -1,52 +1,48 @@
-import Menu1 from 'assets/hamburguer-price1.png'
-import Menu2 from 'assets/hamburguer-price2.png'
-import Menu3 from 'assets/hamburguer-price3.png'
+import { Text, Flex } from 'components'
+import { TextVariants } from 'components/Typography'
 
 
 interface SpecialMenu {
     title: string,
-    subtitle: string,
+    weight: string,
+    variant: TextVariants['variant'],
+    weightVariant: TextVariants['variant'],
+    image: string,
     onlyToday: boolean
 }
-// Example array component
-// const SpecialMenus = [
-//     {
-//         title: 'BURGUER IMPERIAL + BATATA',
-//         weight: '250kg',
-//         onlyToday: true
-//     },
-//     {
-//         title: 'BATATA',
-//         weight: '150kg',
-//         onlyToday: false
-//     },
-//     {
-//         title: 'SORVETE',
-//         weight: '50kg',
-//         onlyToday: false
-//     }
-// ]
 
-export const SpecialMenu = () => {
+export const SpecialMenu = ({ title, weight, variant, weightVariant, image, onlyToday }: SpecialMenu) => {
 
     return (
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: '2fr 1fr',
-            gap: '10px',
+        <Flex css={{
+            '&:first-child': { gridRow: 'span 2' },
+            position: 'relative',
+            textAlign: 'center',
         }}>
-            <div style={{
-                gridRow: 'span 2',
+            <Flex direction={'column'} alignItems={'baseline'} css={{
+                position: 'absolute',
+                top: '12px',
+                left: '17px'
             }}>
-                <img src={Menu1} alt="" />
+                <Text variant={variant} weight={'1'} size={'6'}>
+                    {title}
+                </Text>
+                <Text family={'display'} variant={weightVariant} weight={'1'} size={'4'}>
+                    {weight}
+                </Text>
+            </Flex>
+            <div style={{
+                position: 'absolute',
+                bottom: '25px',
+                right: '25px'
+            }}>
+                {onlyToday && (<Text family={'display'} variant={'bege'} weight={'1'} size={'4'}>
+                    Apenas <br /> <Text as="span" variant={'white'} weight={'1'} size={'8'} >HOJE</Text>
+                </Text>
+                )}
             </div>
-            <div >
-                <img src={Menu2} alt="" />
-            </div>
-            <div >
-                <img src={Menu3} alt="" />
-            </div>
-        </div>
+            <img src={image} alt="" />
+        </Flex>
     )
 
 }

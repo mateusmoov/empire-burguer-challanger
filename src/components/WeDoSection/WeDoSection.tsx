@@ -6,7 +6,7 @@ import MotoboyIcon from 'assets/motoboy-logo.svg'
 export const WeDoSection = () => {
     return (
         <Flex css={{
-            justifyContent: 'center'
+            justifyContent: 'center',
         }}>
             <Flex css={{
                 maxWidth: '1000px',
@@ -15,9 +15,10 @@ export const WeDoSection = () => {
                 borderRadius: '10px',
                 gap: '51px',
                 paddingLeft: '21px',
+                boxShadow: '0px 4px 40px var(--palette-brown)'
             }}>
                 <Flex css={{
-                    gap: '28px'
+                    gap: '28px',
                 }}>
                     <Flex>
                         <img src={HamburguerIcon} alt="hamburguer" />
