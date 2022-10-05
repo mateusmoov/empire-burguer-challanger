@@ -7,6 +7,7 @@ import { Text } from "./Typography";
 import { Grid } from "./Grid";
 import { WeDoSection } from "./WeDoSection";
 import { SpecialMenu } from "./SpecialMenu";
+import { Banner } from "./Banner";
 
 export {
   StyledButton,
@@ -19,4 +20,5 @@ export {
   Grid,
   WeDoSection,
   SpecialMenu,
+  Banner,
 };

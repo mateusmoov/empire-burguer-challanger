@@ -2,7 +2,7 @@ import Menu1 from 'assets/hamburguer-price1.png'
 import Menu2 from 'assets/hamburguer-price2.png'
 import Menu3 from 'assets/hamburguer-price3.png'
 import { TextVariants } from 'components/Typography'
-import { Navbar, Text, Flex, StyledButton, WeDoSection, SpecialMenu } from "components";
+import { Navbar, Text, Flex, StyledButton, WeDoSection, SpecialMenu, Banner } from "components";
 
 
 interface SpecialMenu {
@@ -116,6 +116,21 @@ export const IndexPage = () => {
                     }
                 </Flex>
             </Flex>
+            <Banner width='1168.5px' haveButton={false}>
+                <Text variant={'brown400'} size={'6'} css={{
+                    marginBottom: '5.57px'
+                }}>HORÁRIO DE FUNCIONAMENTO</Text>
+                <Text variant={'white'} size={'2'} family={'display'} css={{
+                    marginBottom: '4px'
+                }}>Segunda-feira a sexta-feira:
+                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
+                </Text>
+                <Text variant={'white'} size={'2'} family={'display'} weight={'3'} css={{
+                    marginBottom: '4px'
+                }}>Sábado a Domíngo:
+                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
+                </Text>
+            </Banner>
         </div>
     )
 }

@@ -77,6 +77,8 @@ export const Text = styled('span', {
       brown100: { color: 'var(--palette-brown-100)' },
       brown200: { color: 'var(--palette-brown-200)' },
       brown300: { color: 'var(--palette-brown-300)' },
+      brown400: { color: 'var(--palette-brown-400)' },
+      brown500: { color: 'var(--palette-brown-500)' },
     },
   },
   defaultVariants: {

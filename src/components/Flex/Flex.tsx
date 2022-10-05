@@ -77,6 +77,9 @@ export const Flex = styled('div', {
             start: {
                 justifyContent: 'start',
             },
+            normal: {
+                justifyContent: 'normal'
+            }
         },
         wrap: {
             wrap: {
