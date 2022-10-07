@@ -116,21 +116,32 @@ export const IndexPage = () => {
                     }
                 </Flex>
             </Flex>
-            <Banner width='1168.5px' haveButton={false}>
-                <Text variant={'brown400'} size={'6'} css={{
-                    marginBottom: '5.57px'
-                }}>HORÁRIO DE FUNCIONAMENTO</Text>
-                <Text variant={'white'} size={'2'} family={'display'} css={{
-                    marginBottom: '4px'
-                }}>Segunda-feira a sexta-feira:
-                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
-                </Text>
-                <Text variant={'white'} size={'2'} family={'display'} weight={'3'} css={{
-                    marginBottom: '4px'
-                }}>Sábado a Domíngo:
-                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
-                </Text>
-            </Banner>
+            <Flex justifyContent={'center'} css={{
+                marginTop: '64px'
+            }}>
+                <Banner width='570px' haveButton={false}>
+                    <Text variant={'brown400'} size={'6'} css={{
+                        marginBottom: '5.57px'
+                    }}>HORÁRIO DE FUNCIONAMENTO</Text>
+                    <Text variant={'white'} size={'2'} family={'display'} css={{
+                        marginBottom: '4px'
+                    }}>Segunda-feira a sexta-feira:
+                        <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
+                    </Text>
+                    <Text variant={'white'} size={'2'} family={'display'} weight={'3'} css={{
+                        marginBottom: '4px'
+                    }}>Sábado a Domíngo:
+                        <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
+                    </Text>
+                </Banner>
+                <Flex direction={'column'} alignItems={'baseline'} css={{
+                    marginLeft: '30px',
+                    gap: '3px'
+                }}>
+                    <Text family={'display'} variant={'brown100'} weight={'1'} >Não esqueça de marcar a gente no Instagram:</Text>
+                    <Text size={'6'} variant={'red'} >#EMPIREBURGUER</Text>
+                </Flex>
+            </Flex>
         </div>
     )
 }
