@@ -8,6 +8,7 @@ import { Grid } from "./Grid";
 import { WeDoSection } from "./WeDoSection";
 import { SpecialMenu } from "./SpecialMenu";
 import { Banner } from "./Banner";
+import { Menu } from "./Menu";
 
 export {
   StyledButton,
@@ -21,4 +22,5 @@ export {
   WeDoSection,
   SpecialMenu,
   Banner,
+  Menu,
 };

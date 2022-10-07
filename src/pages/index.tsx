@@ -2,7 +2,7 @@ import Menu1 from 'assets/hamburguer-price1.png'
 import Menu2 from 'assets/hamburguer-price2.png'
 import Menu3 from 'assets/hamburguer-price3.png'
 import { TextVariants } from 'components/Typography'
-import { Navbar, Text, Flex, StyledButton, WeDoSection, SpecialMenu, Banner } from "components";
+import { Navbar, Text, Flex, StyledButton, WeDoSection, SpecialMenu, Banner, Menu } from "components";
 
 
 interface SpecialMenu {
@@ -142,6 +142,7 @@ export const IndexPage = () => {
                     <Text size={'6'} variant={'red'} >#EMPIREBURGUER</Text>
                 </Flex>
             </Flex>
+            <Menu />
         </div>
     )
 }

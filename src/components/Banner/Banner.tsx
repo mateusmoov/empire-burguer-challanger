@@ -31,19 +31,6 @@ export const Banner = ({ width, haveButton, children }: Banner) => {
                     marginLeft: '15px'
                 }}>
                     {children}
-                    {/* <Text variant={'brown400'} size={'6'} css={{
-                    marginBottom: '5.57px'
-                }}>HORÁRIO DE FUNCIONAMENTO</Text>
-                <Text variant={'white'} size={'2'} family={'display'} css={{
-                    marginBottom: '4px'
-                }}>Segunda-feira a sexta-feira:
-                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
-                </Text>
-                <Text variant={'white'} size={'2'} family={'display'} weight={'3'} css={{
-                    marginBottom: '4px'
-                }}>Sábado a Domíngo:
-                    <Text variant={'white'} size={'2'} family={'display'} weight={'4'}> 18h00 - 23h00</Text>
-                </Text> */}
                 </Flex>
                 {haveButton && (
                     <Flex>
