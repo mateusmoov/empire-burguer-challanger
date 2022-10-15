@@ -1,6 +1,36 @@
-import { Flex, Text, StyledButton } from "components"
+import { Flex, Text, StyledButton, TextMenu } from "components"
 
 export const Menu = () => {
+
+    interface TextMenu {
+        title: string,
+        subtitle: string,
+        price: number
+    }
+
+    const Menus: TextMenu[] = [
+        {
+            title: 'CLASSIC BURGUER',
+            subtitle: 'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
+            price: 49.99
+        },
+        {
+            title: 'SPECIAL BIG BURGUER',
+            subtitle: 'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
+            price: 49.99
+        },
+        {
+            title: 'MEXICAN BURGUER',
+            subtitle: 'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
+            price: 49.99
+        },
+        {
+            title: 'SPECIAL BIG BURGUER',
+            subtitle: 'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
+            price: 49.99
+        }
+    ]
+
     return (
         <Flex css={{
             marginTop: '64px'
@@ -55,10 +85,30 @@ export const Menu = () => {
                     </Flex>
                 </Flex>
             </div >
-            <Flex css={{
+            <Flex direction={'column'} alignItems={'baseline'} css={{
                 width: '100%',
-                maxWidth: '1920px'
-            }}></Flex>
+                maxWidth: '1920px',
+                height: '100%',
+                minHeight: "545px",
+                backgroundColor: 'var(--palette-brown-300)',
+                padding: '25px',
+            }}>
+                <Text size={'8'} weight={'1'} css={{
+                    marginTop: '61px',
+                    marginBottom: '15px',
+                }}>
+                    CARDÁPIO IMPERIAL | BURGUER
+                </Text>
+                {
+                    Menus.map((menu) => (
+                        <div style={{
+                            marginBottom: '36px'
+                        }}>
+                            <TextMenu title={menu.title} subtitle={menu.subtitle} price={menu.price} />
+                        </div>
+                    ))
+                }
+            </Flex>
         </Flex >
     )
 }

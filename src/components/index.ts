@@ -9,6 +9,7 @@ import { WeDoSection } from "./WeDoSection";
 import { SpecialMenu } from "./SpecialMenu";
 import { Banner } from "./Banner";
 import { Menu } from "./Menu";
+import { TextMenu } from "./TextMenu";
 
 export {
   StyledButton,
@@ -23,4 +24,5 @@ export {
   SpecialMenu,
   Banner,
   Menu,
+  TextMenu,
 };
