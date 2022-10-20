@@ -61,7 +61,7 @@ export const Menu = () => {
                             lineHeight: '46px'
                         }}>
                             ESCOLHA O SEU COMBO IMPERIAL,
-                            <Text variant={'brown300'} size={'9'} family={'display'} weight={'4'} css={{
+                            <Text variant={'brown300'} size={'9'} weight={'3'} css={{
                                 backgroundColor: 'var(--palette-yellow)',
                                 padding: '3px',
                                 borderRadius: '6px'

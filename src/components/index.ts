@@ -11,6 +11,7 @@ import { Banner } from "./Banner";
 import { Menu } from "./Menu";
 import { TextMenu } from "./TextMenu";
 import { ServiceSection } from "./ServiceSection";
+import { DeliveryFeatures } from "./DeliveryFeatures";
 
 export {
   StyledButton,
@@ -27,4 +28,5 @@ export {
   Menu,
   TextMenu,
   ServiceSection,
+  DeliveryFeatures,
 };
