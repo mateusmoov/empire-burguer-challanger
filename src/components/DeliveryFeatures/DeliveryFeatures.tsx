@@ -10,7 +10,9 @@ export const DeliveryFeatures = ({ image, title, subtitle }: DeliveryFeatures) =
         <Flex css={{
             width: '100%',
             maxWidth: '569px',
-            borderRadius: '10px'
+            borderRadius: '10px',
+            backgroundColor: 'var(--palette-white)',
+            '&:first-child': { boxShadow: '0px 4px 40px rgba(179, 155, 132, 0.5)' },
         }}>
             <Flex css={{
                 padding: '15px 60px 15px 22px',

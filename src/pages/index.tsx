@@ -12,7 +12,8 @@ import {
     Banner,
     Menu,
     ServiceSection,
-    Divider
+    Divider,
+    DeliverySection
 } from "components";
 
 interface SpecialMenu {
@@ -239,6 +240,7 @@ export const IndexPage = () => {
                 orientation={'vertical'}
                 variant={"gray"}
                 css={{ width: '1170px' }} />
+            <DeliverySection />
         </div>
     );
 };
