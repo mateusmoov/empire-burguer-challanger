@@ -11,6 +11,8 @@ import {
     SpecialMenu,
     Banner,
     Menu,
+    ServiceSection,
+    Divider
 } from "components";
 
 interface SpecialMenu {
@@ -140,7 +142,6 @@ export const IndexPage = () => {
                     family={"display"}
                     size={"1"}
                     weight={"1"}
-                    css={{}}
                 >
                     Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque
                     sempre estamos mudando o nosso cardapio.
@@ -229,6 +230,15 @@ export const IndexPage = () => {
                 </Flex>
             </Flex>
             <Menu />
+            <Flex justifyContent={'center'} css={{
+                margin: '71px 0 128px 0'
+            }}>
+                <ServiceSection />
+            </Flex>
+            <Divider
+                orientation={'vertical'}
+                variant={"gray"}
+                css={{ width: '1170px' }} />
         </div>
     );
 };

@@ -16,7 +16,7 @@ export const StyledButton = styled('button', {
     cursor: 'pointer',
     border: '0',
     font: 'inherit',
-    borderRadius: '0.25rem',
+    borderRadius: '0.3rem',
     color: 'var(--palette-white)',
     fontWeight: '700',
 
