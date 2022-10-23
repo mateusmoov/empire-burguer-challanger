@@ -109,7 +109,9 @@ export const IndexPage = () => {
                         variant={"primary"}
                         css={{
                             padding: "10px 20px",
+                            lineHeight: '32px',
                             marginTop: "0.8rem",
+                            fontSize: '22px'
                         }}
                     >
                         Comprar Agora

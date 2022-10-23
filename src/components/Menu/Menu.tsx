@@ -78,7 +78,9 @@ export const Menu = () => {
                     </Flex>
                     <Flex>
                         <StyledButton variant={'primary'} css={{
-                            padding: '10.4307px 20.8614px'
+                            padding: '10.4307px 20.8614px',
+                            lineHeight: '22px'
+
                         }}>
                             Ver Cardápio Completo
                         </StyledButton>
