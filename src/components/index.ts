@@ -13,6 +13,7 @@ import { TextMenu } from "./TextMenu";
 import { ServiceSection } from "./ServiceSection";
 import { DeliveryFeatures } from "./DeliveryFeatures";
 import { DeliverySection } from "./DeliverySection";
+import { Location } from "./Location";
 
 export {
   StyledButton,
@@ -31,4 +32,5 @@ export {
   ServiceSection,
   DeliveryFeatures,
   DeliverySection,
+  Location,
 };

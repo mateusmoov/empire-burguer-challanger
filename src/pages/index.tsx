@@ -15,7 +15,8 @@ import {
     Menu,
     ServiceSection,
     Divider,
-    DeliverySection
+    DeliverySection,
+    Location
 } from "components";
 
 interface SpecialMenu {
@@ -278,6 +279,11 @@ export const IndexPage = () => {
                         com temática medieval!
                     </Text>
                 </Banner>
+            </Flex>
+            <Flex css={{
+                marginTop: '64px'
+            }}>
+                <Location />
             </Flex>
         </div>
 
