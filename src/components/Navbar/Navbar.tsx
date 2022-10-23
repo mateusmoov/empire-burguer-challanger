@@ -102,7 +102,10 @@ export const Navbar = () => {
                     css={{ height: 47 }}
                 />
             </Flex>
-            <StyledIconButton variant={"primary"} css={{ padding: "4px 16px" }}>
+            <StyledIconButton variant={"primary"} css={{
+                padding: "4px 16px",
+                lineHeight: '25px',
+            }}>
                 <img src={WhatsAppLogo} alt="whatsapp" />
                 Contato
             </StyledIconButton>
