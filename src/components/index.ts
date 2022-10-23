@@ -14,6 +14,7 @@ import { ServiceSection } from "./ServiceSection";
 import { DeliveryFeatures } from "./DeliveryFeatures";
 import { DeliverySection } from "./DeliverySection";
 import { Location } from "./Location";
+import { Footer } from "./Footer";
 
 export {
   StyledButton,
@@ -33,4 +34,5 @@ export {
   DeliveryFeatures,
   DeliverySection,
   Location,
+  Footer,
 };

@@ -16,7 +16,8 @@ import {
     ServiceSection,
     Divider,
     DeliverySection,
-    Location
+    Location,
+    Footer
 } from "components";
 
 interface SpecialMenu {
@@ -287,6 +288,7 @@ export const IndexPage = () => {
             }}>
                 <Location />
             </Flex>
+            <Footer />
         </div>
 
     );
