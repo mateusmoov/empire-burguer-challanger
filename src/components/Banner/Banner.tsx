@@ -1,13 +1,13 @@
 import { Flex, Divider, Text, StyledButton } from "components"
-import clockIcon from 'assets/timer.svg'
 
 interface Banner {
     width: string,
     haveButton: boolean,
-    children: React.ReactNode
+    children: React.ReactNode,
+    icon: string
 }
 
-export const Banner = ({ width, haveButton, children }: Banner) => {
+export const Banner = ({ width, haveButton, children, icon }: Banner) => {
     return (
         <Flex css={{
             width: '100%',
@@ -19,7 +19,7 @@ export const Banner = ({ width, haveButton, children }: Banner) => {
             <Flex css={{
                 gap: '15px'
             }}>
-                <img src={clockIcon} alt="timer" width={94} />
+                <img src={icon} alt="timer" width={94} />
                 <Divider orientation={'vertical'} variant={'gray'} css={{
                     height: '83px'
                 }} />
@@ -35,13 +35,14 @@ export const Banner = ({ width, haveButton, children }: Banner) => {
                 {haveButton && (
                     <Flex>
                         <StyledButton variant={'secondary'} css={{
-                            padding: '8px 16px'
+                            padding: '8px 16px',
+                            lineHeight: '25px'
                         }}>
                             SOLICITAR PEDIDO
                         </StyledButton>
                     </Flex>
                 )}
             </Flex>
-        </Flex>
+        </Flex >
     )
 }

@@ -1,6 +1,8 @@
 import Menu1 from "assets/hamburguer-price1.png";
 import Menu2 from "assets/hamburguer-price2.png";
 import Menu3 from "assets/hamburguer-price3.png";
+import ClockIcon from 'assets/timer.svg'
+import Phone from 'assets/phone.svg'
 import { TextVariants } from "components/Typography";
 import {
     Navbar,
@@ -174,7 +176,7 @@ export const IndexPage = () => {
                     marginTop: "64px",
                 }}
             >
-                <Banner width="570px" haveButton={false}>
+                <Banner width="570px" haveButton={false} icon={ClockIcon}>
                     <Text
                         variant={"brown400"}
                         size={"6"}
@@ -241,6 +243,43 @@ export const IndexPage = () => {
                 variant={"gray"}
                 css={{ width: '1170px' }} />
             <DeliverySection />
+            <Flex justifyContent={'center'}>
+                <Banner width="1168px" haveButton={true} icon={Phone}>
+                    <Text
+                        variant={"brown400"}
+                        size={"6"}
+                        css={{
+                            marginBottom: "5.57px",
+                        }}
+                    >
+                        FAÇA SEU PEDIDO AGORA MESMO!
+                    </Text>
+                    <Text
+                        variant={"white"}
+                        size={"2"}
+                        family={"display"}
+                        weight={'1'}
+                        css={{
+                            marginBottom: "4px",
+                        }}
+                    >
+                        Venha saborear a melhor experiência de hamburguenses artesanal <br /> do&nbsp;
+                        <Text
+                            variant={"white"}
+                            size={"2"}
+                            family={"display"}
+                            weight={'2'}
+                            css={{
+                                marginBottom: "4px",
+                            }}
+                        >
+                            Empires Burger,&nbsp;
+                        </Text>
+                        com temática medieval!
+                    </Text>
+                </Banner>
+            </Flex>
         </div>
+
     );
 };
